@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8a2be2" />
+  <meta name="author" content="Welbio Dione" />
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PRESENTE">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="./assets/Logo-zap.png">
+  <meta property="og:description" content="Meu presente feito com muito carinho pra tu, espero que goste 😊">
+
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> 
+
+  <title>Presente</title>
+</head>''
+<body>
+  
+  <section class="home card">
+    <h1>Bem-vinda ao seu Presente 😁</h1>
+    <p>como eu sou seu irmãozinho querido, preparei esse lindo presente</p>
+    <p>espero que goste</p>
+    <button class="btn-init" disabled onclick="start()">Começar</button>
+    <div>
+      <p>lembrando que antes de começar, você precisa concordar com os termos.</p>
+      <label>
+        <input type="checkbox" id="term">
+        Você concorda, que de maneira nenhuma tentará agredir seu querido irmão, ameaçá-lo, quebrar suas costelas, puchar seus cabelos ou qualquer forma de combate brutal que provavelmente levará a possiveis traumas futuros.
+      </label>
+    </div>
+  </section>
+  <ol class="remove questions card">
+    <li class="ques ques1">
+      <h2>Quem é mais bonito(a)? 😁</h2>
+      <button class="btn-question" onclick="err(this)">Eu kkk, primeiro vem o rascunho depois a obra de arte!</button>
+      <button class="btn-question chama-mae" onclick="err(this)">Seu maninho kkk, primeiro vem o original, depois a cópia pirata!</button>
+      <button class="btn-question hidden-mae mae" onclick="right(this)">A MÃE 😂</button>
+    </li>
+    <li class="ques ques2">
+      <h2>quem é mais inteligente?</h2>
+      <button class="btn-question" onclick="right(this)">Seu querido irmão 🙃</button>
+      <button class="btn-question show-aside" onclick="err(this)">Lógico que sou eu haha, tirei 10 ontem</button>
+      <aside class="patada remove" style="color: red;">E também foi expulsa da sala 🤣</aside>
+    </li>
+    <li class="ques ques3">
+      <h2>Nem tudo é só brincadeira né?</h2>
+      <p>E para comemorar seu aniversário, nesta data especial, um pouco de musica não faz mal</p>
+      <aside style="font-size: .5rem;">rimou kkk <br> Esse rato parece tu 🤣</aside>
+      <img src="https://i.ytimg.com/vi/eyUrZkyFWVI/maxresdefault.jpg" alt="foto da ryanne" style="max-width: 100%;">
+      <audio src="./assets/Risada do Atumalaca sem efeito (Original) Meme_2p3wX32ULtI.mp3" controls class="atumalaka"></audio>
+      <button onclick="next()" class="btn-question remove skip">aaa não aguento mais 😫</button>
+    </li>
+    <li class="ques ques4">
+      <h2>🤣🤣🤣<br>E ai tá gostando? </h2>
+      <button class="btn-question" onclick="right(this)">Simm! Amei 😍</button>
+      <button class="btn-question play-animate" style="position: relative;" onclick="err(this)" style="transition: .1s ease">EU VOU TEM MATAAA!</button>
+    </li>
+    <li class="ques ques5">
+      <h2>Quem bom!! Então agora vamos festejar kkk</h2>
+      <p>Parabéns Pra Você.. querida.. muitos anos de vida, lala lalá...</p>
+      <img src="https://1.bp.blogspot.com/-_EqioI4bAU8/Vu1KotZDLjI/AAAAAAAAS0Q/I_2Y7SmC9N4DoKEgTEhAVXyBszmPJXVuQ/s400/Gato%2Bdan%25C3%25A7ando%2B%2528Gif%2529.gif" alt="ryanne dançando" style="max-height: 200px;" onclick="rgb()">
+      <aside style="font-size:.5rem;">Clica na imagem e veja o resultado</aside>
+      <audio src="./assets/PARABÉNS PRA VOCÊ REMIX_8dQyKN-wwLs.mp3" controls loop></audio>
+    </li>
+  </ol>
+
+  <script src="./src/js/index.js"></script>
+  <script src="./src/js/termo.js"></script>
+  <script src="./src/js/rgb.js"></script>
+</body>
+</html>
